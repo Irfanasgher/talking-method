@@ -1,0 +1,1174 @@
+
+<!DOCTYPE html>
+<html class="loading" lang="es" xml:lang="es" data-textdirection="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="g9aS2GPOOp8W8eJCooDUVtx4bt3ks966CvKEkcWi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <meta name="author" content="THE HEXAA">
+            
+            <title>User Dashboard</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://talkingmethod.thehexaa.com/front_ui/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://talkingmethod.thehexaa.com/front_ui/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://talkingmethod.thehexaa.com/front_ui/favicon/favicon-16x16.png">
+
+    <link rel="mask-icon" href="https://talkingmethod.thehexaa.com/front_ui/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CQuicksand:300,400,500,700"
+            rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/line-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/vendors.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/charts/jquery-jvectormap-2.0.3.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/weather-icons/climacons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/fonts/meteocons/style.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/charts/morris.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/vendors.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/charts/chartist-plugin-tooltip.css">
+
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/app.css">
+
+    <link rel="stylesheet" type="text/css"
+          href="https://talkingmethod.thehexaa.com/app-assets/css/core/menu/menu-types/vertical-compact-menu.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/charts/jquery-jvectormap-2.0.3.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/fonts/simple-line-icons/style.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/pages/timeline.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/pages/dashboard-travel.css">
+
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/editors/summernote.css">
+
+
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/assets/css/style.css">
+
+    <link rel="stylesheet" type="text/css"
+          href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/tables/datatable/datatables.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/timepicker.css">
+
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/forms/selects/select2.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/forms/icheck/icheck.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/forms/icheck/custom.css">
+
+    <link rel="stylesheet" href="https://talkingmethod.thehexaa.com/app-assets/fonts/flag-icon-css/css/flag-icon.min.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.11.0/css/bootstrap-tour-standalone.min.css">
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142519844-1"></script>
+        <script>  window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
+            gtag('js', new Date());
+
+            gtag('config', 'UA-142519844-1');
+        </script>
+
+                    
+            <script>
+                (function (w, d, s, l, i) {
+                    w[l] = w[l] || [];
+                    w[l].push({
+                        'gtm.start':
+                            new Date().getTime(), event: 'gtm.js'
+                    });
+                    var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+                    j.async = true;
+                    j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                    f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayer', 'GTM-W83PVQK');
+            </script>
+        
+    
+
+    
+    <style>
+        .badge:hover {
+            cursor: pointer;
+        }
+
+        .fc-more-popover {
+            height: 200px;
+            overflow-y: auto;
+        }
+
+        @media  only screen and (min-width: 1920px) {
+            .profile-image {
+                height: 3.5vh !important;
+            }
+
+            /*.main-menu{*/
+            /*    margin-top: 20px !important;*/
+            /*}*/
+        }
+
+        @media (max-width: 440px){
+            .fc-more-popover {
+                top: 40px !important;
+            }
+        }
+
+        .fc-unthemed .fc-today {
+             color: #6B6F82;
+        }
+    </style>
+</head>
+
+<style>
+    bg--cyan {
+        /* background-color: #192836 !important; */
+        background-color: #fff !important;
+    }
+    .profile-image {
+        object-fit: cover;height: 4.5vh !important;border-radius: 50% !important;margin-top: 4px
+    }
+    @media  screen and (min-width: 1920px) {
+        .profile-image {
+            height: 3.0vh !important;
+        }
+    }
+</style>
+
+<body class="vertical-layout vertical-compact-menu 2-columns   menu-expanded fixed-navbar" data-open="click"
+      data-menu="vertical-compact-menu" data-col="2-columns">
+
+            <!-- staging server Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W83PVQK"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+    
+<style>
+    .badge-up {
+        top: 14px !important;
+        right: 14px !important;
+    }
+
+    .badge {
+        font-size: 65% !important;
+    }
+</style>
+
+<nav
+    class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top bg--cyan navbar-shadow navbar-brand-center" style="background-color: #fff;">
+    <div class="navbar-wrapper">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item mobile-menu d-md-none mr-auto">
+                    <a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#">
+                        <i class="fa fa-navicon"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+					<a class="navbar-brand" href="#">
+						<img class="brand-logo" alt="talking method logo" style="margin-top: 6px;"
+								src="https://talkingmethod.thehexaa.com/front_ui/icono_T_transparente.png"
+						>
+						<h3 class="brand-text">Talking Method</h3>
+					</a>
+				</li>
+                <li class="nav-item d-md-none">
+                    <a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile">
+                        <i class="la la-ellipsis-v"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-container content">
+            <div class="collapse navbar-collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav mr-auto float-left">
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav float-right" style="display: flex;align-items: center;">
+                        <li class="dropdown dropdown-user nav-item">
+                            <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                                <span class="mr-1">Hello,
+                                    <span class="user-name text-bold-700">irfan</span>
+                                </span>
+                                <span class="avatar avatar-online">
+                                    <img src="https://talkingmethod.thehexaa.com/app-assets/images/portrait/small/avatar-s-19.png"
+                                             alt="avatar"><i></i>
+                                                                    </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa fa-user"></i> Edit profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa fa-lock"></i> Change password
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa fa-check-square"></i> Credit history
+                                </a>
+                                <a class="dropdown-item" href="cart.html">
+                                    <i class="fa fa-shopping-cart"></i> Cart
+                                </a>
+                                <a class="dropdown-item" href="javascript:void(0)" onclick="myFunction()">
+                                    <i class="fa fa-wind"></i> Start tour
+                                </a>
+                                <div class="dropdown-divider"></div>
+
+                                <a class="dropdown-item" href="#"
+                                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                    <i class="fa fa-power"></i>
+                                    Log out
+                                </a>
+
+                                <form id="logout-form" action="#" method="POST"
+                                      style="display: none;">
+                                    <input type="hidden" name="_token" value="g9aS2GPOOp8W8eJCooDUVtx4bt3ks966CvKEkcWi">                                </form>
+                            </div>
+                        </li>
+
+                        <li class="dropdown dropdown-language nav-item">
+                                                            <a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <img src="https://talkingmethod.thehexaa.com/flags\D9iT7pcDImflag-english.png" class="flag-icon" alt="">
+                                    <span class="selected-language"></span>
+                                </a>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdown-flag">
+                                                                    <a class="dropdown-item" href="#">
+                                        <img src="https://talkingmethod.thehexaa.com/flags/D9iT7pcDImflag-english.png" class="flag-icon" alt="">
+                                        English
+                                    </a>
+                                                                    <a class="dropdown-item" href="#">
+                                        <img src="https://talkingmethod.thehexaa.com/flags/s2KgvC7hjwflag-spanish.png" class="flag-icon" alt="">
+                                        Spanish
+                                    </a>
+                                                                    <a class="dropdown-item" href="#">
+                                        <img src="https://talkingmethod.thehexaa.com/flags/f7DVRthiMUflag-portugal.png" class="flag-icon" alt="">
+                                        Portuguese
+                                    </a>
+                                                            </div>
+                        </li>
+
+                        <li class="dropdown dropdown-notification nav-item user-notification" id="dropDownList">
+                            <a class="nav-link nav-link-label" href="#" data-toggle="dropdown">
+                                <i class="fa fa-bell-o" onclick="myFunct()"></i>
+                                                            </a>
+                            <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right"
+                                style="overflow-y: scroll !important;">
+                                <li class="dropdown-menu-header">
+                                    <h6 class="dropdown-header m-0">
+                                        <span class="grey darken-2">Notifications</span>
+                                    </h6>
+                                </li>
+                                <li class="scrollable-container media-list w-100" style="overflow: initial !important">
+                                    <a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i
+                                                    class="fa fa-plus-square icon-bg-circle bg-cyan"></i></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading"></h6>
+                                                <p class="notification-text font-small-3 text-muted">Loading
+                                                    ...</p>
+                                                <small>
+                                                    <time class="media-meta text-muted"></time>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown dropdown-notification nav-item">
+                            <a class="nav-link nav-link-label" href="cart.html">
+                                <i class="fa fa-shopping-cart"></i>
+                                
+                                <span
+                                    class="badge badge-pill badge-default badge-default badge-up cart_count" style="background-color: #EC1A36;">
+									 0
+                                </span>
+                            </a>
+                        </li>
+
+                    </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<style>
+        .active-link {
+            color: #c3c3c3;
+            background: #f0f0f0;
+            border-right: 4px solid #EC1A36;
+        }
+
+        .page-item.active .page-link {
+            z-index: 1;
+            color: #fff;
+            background-color: #EC1A36;
+            border-color: #EC1A36;
+        }
+
+        html body a {
+            color: #374464;
+        }
+
+        .main-menu.menu-light .navigation > li.open > a {
+            color: #545766 !important;
+            background: whitesmoke !important;
+            border-right: 4px solid #EC1A36 !important;
+        }
+
+
+    </style>
+
+
+<div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+    <div class="main-menu-content">
+        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation" style="margin-top: 11px;">
+				<li class="nav-item" style="background-color: #EC1A36" id="step-2">
+                    <a href="#">
+                        <i class="fa fa-money" style="color: #ffffff"></i>
+                        <span class="menu-title" data-i18n="nav.dash.travel"
+                              style="color: #ffffff">1 Credits</span>
+                    </a>
+                </li>
+                <li class="nav-item " id="step-1">
+                    <a href="#">
+                        <i class="fa fa-home"></i>
+                        <span class="menu-title" data-i18n="nav.dash.travel">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item " id="step-7">
+                    <a href="#"><i class="fa fa-archive"></i>
+                        <span class="menu-title" data-i18n="">Bookings</span>
+                    </a>
+                </li>
+                <li class="nav-item " id="step-4">
+                    <a href="#">
+                        <i class="fa fa-calendar"></i>
+                        <span class="menu-title" data-i18n="nav.dash.travel">View classes</span>
+                    </a>
+                </li>
+                <li class="nav-item " id="step-5">
+                    <a href="#"><i class="fa fa-euro"></i>
+                        <span class="menu-title" data-i18n="">
+							Comprar clases
+						</span>
+                    </a>
+                </li>
+                <li class="nav-item active-link" id="step-6">
+                    <a href="cart.html"><i class="fa fa-shopping-cart"></i>
+                        <span class="badge badge-pill badge-default badge-danger badge-default badge-up cart_countt"
+                              style="margin-right: 30px;margin-top: -8px;">
+                                                            0
+                                                    </span>
+                        <span class="menu-title" data-i18n="">Cart</span>
+                    </a>
+                </li>
+            </ul>
+    </div>
+</div>
+
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/extensions/toastr.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/plugins/extensions/toastr.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/pages/ecommerce-cart.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/pages/travel.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/ui/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/plugins/ui/jqueryui.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/plugins/forms/checkboxes-radios.css">
+
+    <style>
+        #content-header {
+            margin: 0 0 5rem;
+            background: url(https://talkingmethod.thehexaa.com/app-assets/images/laptop.jpg) no-repeat scroll 0 40%;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+
+
+        @media  only screen and (min-width: 1000px) {
+            .ui-spinner {
+                width: 50% !important;
+            }
+        }
+
+        @media  only screen and (max-width: 1000px) {
+            .ui-spinner-input {
+                margin: 1px 30px 1px 1px !important;
+            }
+        }
+
+        .weekDays-selector input {
+            display: none !important;
+        }
+
+        .weekDays-selector input[type=checkbox] + label {
+            display: inline-block;
+            border-radius: 8px;
+            background: #dddddd;
+            height: 40px;
+            width: 90px;
+            margin-right: 3px;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .weekDays-selector input[type=checkbox]:checked + label {
+            background: #ED1A36;
+            color: #ffffff;
+        }
+    </style>
+
+    <div class="app-content content">
+        <div class="content-wrapper">
+            <div class="content-header row">
+                <div class="content-header-left col-md-6 col-12 mb-2">
+                    <h3 class="content-header-title mb-0">
+Cart</h3>
+                    <div class="row breadcrumbs-top">
+                        <div class="breadcrumb-wrapper col-12">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a
+                                            href="#">Home</a></li>
+                                <li class="breadcrumb-item active">Cart</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body">
+                <div class="shopping-cart">
+                    <div class="tab-content pt-1">
+                        <div role="tabpanel" class="tab-pane active show" id="shop-cart-tab" aria-expanded="true"
+                             aria-labelledby="shopping-cart" style="">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table
+                                                    class="table table-borderless mb-0 table-responsive-sm table-responsive-xs">
+                                                <thead>
+                                                <div class="alert alert-danger alert-dismissible mb-2 myAlert"
+                                                     role="alert" style="display: none">
+                                                    <h4 class="alert-heading mb-2">Oh no! Cart is empty</h4>
+                                                    <p>View <a
+                                                                href="#"
+                                                                class="alert-link">Credits</a>.
+                                                    </p>
+                                                </div>
+                                                <tr>
+                                                    <th>Package</th>
+                                                    <th>Price</th>
+                                                    <th>Quantity</th>
+                                                    <th>Total</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody class="tableBody">
+                                                                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row match-height myRow">
+
+                                                                                                    
+                                                            </div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function deleteFunction(id) {
+            let CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+            swal({
+                text: "Delete?",
+                icon: "warning",
+                buttons: {
+                    cancel: {
+                        text: "No",
+                        value: null,
+                        visible: true,
+                        className: "",
+                        closeModal: false,
+                    },
+                    confirm: {
+                        text: "Yes",
+                        value: true,
+                        visible: true,
+                        className: "",
+                        closeModal: false
+                    }
+                }
+            }).then(isConfirm => {
+                if (isConfirm) {
+
+                    $.ajax({
+                        url: "https://talkingmethod.thehexaa.com/user/credits/delete/cart",
+                        type: 'post',
+                        data: {
+                            id: id,
+                            _token: CSRF_TOKEN,
+                        },
+                        dataType: 'JSON',
+                        success: function (data) {
+                            // console.log(data);
+                            if (data.status == 200) {
+                                swal("Package deleted from the cart", {
+                                    icon: "success",
+                                });
+                                $("#row-" + id).fadeOut(function () {
+                                    $("#row-" + id).remove();
+                                    subTotal()
+
+                                    // var totalRows = $(".row-index").length;
+                                    // for(var count=0; count<totalRows; count++) document.getElementsByClassName("row-index")[count].textContent = count+1;
+                                });
+                                var old_count = parseInt($('.cart_count').text());
+                                $('.cart_count').text(old_count - 1);
+
+                                var old_count1 = parseInt($('.cart_countt').text());
+                                $('.cart_countt').text(old_count1 - 1);
+                            }
+                            if (data.status == -1) {
+                                swal("Canceled", "", "error");
+                            }
+                        },
+                    });
+                } else {
+                    swal("Canceled", "", "error");
+                }
+            });
+        }
+    </script>
+
+
+<footer class="footer footer-static footer-dark navbar-border navbar-shadow">
+    <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
+        <span class="float-md-left d-block d-md-inline-block">
+                All rights reserved.
+        </span>
+    </p>
+</footer>
+
+<script src="https://talkingmethod.thehexaa.com/app-assets/vendors/js/vendors.min.js"></script>
+<script src="https://talkingmethod.thehexaa.com/app-assets/vendors/js/charts/chartist.min.js"></script>
+<script src="https://talkingmethod.thehexaa.com/app-assets/vendors/js/charts/chart.min.js"></script>
+<script src="https://talkingmethod.thehexaa.com/app-assets/vendors/js/charts/raphael-min.js"></script>
+<script src="https://talkingmethod.thehexaa.com/app-assets/vendors/js/charts/jquery.sparkline.min.js"></script>
+<script src="https://talkingmethod.thehexaa.com/app-assets/vendors/js/charts/jvector/jquery-jvectormap-2.0.3.min.js"></script>
+<script src="https://talkingmethod.thehexaa.com/app-assets/vendors/js/charts/jvector/jquery-jvectormap-world-mill.js"></script>
+<script src="https://talkingmethod.thehexaa.com/app-assets/data/jvector/visitor-data.js"></script>
+
+<script src="https://talkingmethod.thehexaa.com/app-assets/js/core/app-menu.js"></script>
+<script src="https://talkingmethod.thehexaa.com/app-assets/js/core/app.js"></script>
+
+<script src="https://talkingmethod.thehexaa.com/app-assets/vendors/sweet-alert/sweetalert.js"></script>
+
+<script src="https://talkingmethod.thehexaa.com/app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
+<script src="https://talkingmethod.thehexaa.com/app-assets/js/scripts/tables/datatables/datatable-basic.js"></script>
+
+<script src="https://talkingmethod.thehexaa.com/app-assets/js/timepicker.js"></script>
+
+<script src="https://talkingmethod.thehexaa.com/app-assets/vendors/js/forms/select/select2.full.min.js" type="text/javascript"></script>
+<script src="https://talkingmethod.thehexaa.com/app-assets/js/scripts/forms/select/form-select2.js" type="text/javascript"></script>
+
+<script src="https://talkingmethod.thehexaa.com/app-assets/vendors/js/forms/icheck/icheck.min.js" type="text/javascript"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.js"
+        type="text/javascript"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.11.0/js/bootstrap-tour-standalone.min.js"></script>
+
+
+<!-- <script>
+    var lang_locale = "en";
+        if (!(lang_locale)) lang_locale = "en";
+    if (!(lang_locale)) lang_locale = "es";
+    
+    try {
+        $('.zero-configuration').DataTable({
+            "language": {
+                "url": window.location.protocol + "//" + window.location.hostname + "/app-assets/js/scripts/tables/datatables/language/" + lang_locale + ".json"
+            }
+        });
+    } catch (err) {
+        $('.zero-configuration').DataTable({
+            "language": {
+                "url": window.location.protocol + "//" + window.location.hostname + "/app-assets/js/scripts/tables/datatables/language/es.json"
+            }
+        });
+    }
+</script>
+
+
+<script>
+            var userOffset = "-300";
+                        </script>
+
+
+    <script>
+        var text = "Read All Notifications";
+        var text1 = "Notifications";
+        var text2 = "No Notification";
+    </script>
+
+    <script>
+        var origin = window.location.origin;
+        var html = ``;
+
+        function notificationFetch() {
+            let CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+            $.ajax({
+                url: "https://talkingmethod.thehexaa.com/user/notification/read",
+                type: 'post',
+                data: {
+                    _token: CSRF_TOKEN,
+                },
+                dataType: 'JSON',
+                success: function (data) {
+                    if (data.notifications.length != 0) {
+                        html = ``;
+                        html = `<a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon ft-bell" onclick="notificationRead()"></i>`;
+
+                        if (data.notification_count > 0)
+                            html += `<span class="badge badge-pill badge-default badge-danger badge-default badge-up badge-glow">` + data.notification_count + `</span>`;
+                        else
+                            html += `<span class="badge badge-pill badge-default badge-danger badge-default badge-up badge-glow"></span>`;
+
+                        html += `
+                            </a>
+                                <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right" style="overflow-y: scroll;">
+                                    <li class="dropdown-menu-header">
+                                        <h6 class="dropdown-header m-0"><span class="grey darken-2">${text1}</span></h6>
+                                        <span class="notification-tag badge badge-default badge-primary float-right m-0" onclick="window.location.href='` + origin + `/user/all/notification'">${text}</span>
+                                    </li>
+                                    <li class="scrollable-container media-list w-100">`;
+                        $.each(data.notifications, function (index, value) {
+                            if (value.schedule_cancellation.schedule_booking.schedules) {
+                                var m = moment(value.created_at, 'YYYY-MM-DD H:mm:ss');
+                                var d = new Date(value.created_at);
+                                var seconds = d.getTime() / 1000;
+
+                                var zone = userOffset * 60;
+
+                                var finalDate = moment(new Date((seconds - zone) * 1000), 'YYYY-MM-DD H:mm:ss');
+                                var dateObj = new Date(value.schedule_cancellation.schedule_booking.schedules.date + ' ' + value.schedule_cancellation.schedule_booking.schedules.time);
+                                var d1 = new Date(dateObj);
+                                var seconds1 = d1.getTime() / 1000;
+                                var dateTime = new Date((seconds1 - zone) * 1000);
+                                var dateOnly = new Date(Date.parse(dateTime));
+
+                                html += `
+                                    <a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center">
+                                                <i class="ft-plus-square icon-bg-circle bg-cyan"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">${value.text}</h6>
+                                                <h7 class="media-heading">Class: ${dateOnly.toDateString()} &nbsp; ${dateTime.toLocaleTimeString('en-US')}</h7>
+                                                <p class="notification-text font-small-3 text-muted"></p>
+                                                <small><time class="media-meta text-muted">${finalDate.fromNow()}</time></small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                `;
+                            }
+                        });
+                        html += `</li></ul>`;
+                        $('.user-notification').html(html);
+                    } else {
+                        html = ``;
+                        html = `
+                            <a class="nav-link nav-link-label" href="#" data-toggle="dropdown">
+                                <i class="ficon ft-bell"></i>
+                                <span class="badge badge-pill badge-default badge-danger badge-default badge-up badge-glow"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right" style="overflow-y: scroll;">
+                                <li class="dropdown-menu-header">
+                                    <h6 class="dropdown-header m-0"><span class="grey darken-2">${text1}</span></h6>
+                                    <span class="notification-tag badge badge-default badge-primary float-right m-0" onclick="window.location.href='` + origin + `/user/all/notification'">${text}</span>
+                                </li>
+                                <li class="scrollable-container media-list w-100">
+                                    <a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center">
+                                                <i class="ft-plus-square icon-bg-circle bg-cyan"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">${text2}</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>`;
+                        $('.user-notification').html(html);
+                    }
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            notificationFetch();
+        });
+
+        setInterval(function () {
+            notificationFetch();
+        }, 30000);
+
+        function notificationRead() {
+            if ($('#dropDownList').hasClass("show")) {
+            } else {
+                let CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+                $.ajax({
+                    url: "https://talkingmethod.thehexaa.com/user/notification/read/status",
+                    type: 'post',
+                    data: {
+                        _token: CSRF_TOKEN,
+                    },
+                    dataType: 'JSON',
+                    success: function (data) {
+                        if (data.status == 200) {
+                            $('.badge-glow').text('');
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+
+
+
+    <script>
+        var pathname = window.location.pathname;
+
+        function myFunction() {
+            localStorage.clear();
+            $('body').removeClass('menu-hide');
+            $('body').addClass('menu-open');
+            if (pathname === '/user/dashboard' || pathname === '//user/dashboard') {
+                $('#myModal').modal('hide');
+                var tour = new Tour({
+                    steps: [
+                        {
+                            element: "#step-1",
+                            title: "Step 1",
+                            content: "Welcome to your user dashboard."
+                        },
+                        {
+                            element: "#step-2",
+                            title: "Step 2",
+                            content: "The available credits are here."
+                        },
+                        {
+                            element: ".step-3",
+                            title: "Step  3",
+                            content: "Here you can book classes using your credits"
+                        },
+                        {
+                            element: "#step-4",
+                            title: "Step 4",
+                            content: "You can see classes here..."
+                        },
+                        {
+                            element: "#step-5",
+                            title: "Step 5",
+                            content: "buy more credits..."
+                        },
+                        {
+                            element: "#step-7",
+                            title: "Step 6",
+                            content: "check your bookings...."
+                        },
+                        {
+                            element: "#step-6",
+                            title: "Step 7",
+                            content: "or buy more credits."
+                        }
+                    ]
+                });
+
+                tour.init();
+
+                tour.start();
+            } else {
+                $.ajax({
+                    url: "https://talkingmethod.thehexaa.com/user/tour",
+                    type: 'get',
+                    dataType: 'JSON',
+                    success: function () {
+                        var url = window.location.origin;
+                        window.location.replace(url + "/user/dashboard");
+                    },
+                });
+            }
+        }
+
+            </script>
+
+    <script src="https://talkingmethod.thehexaa.com/app-assets/vendors/js/extensions/toastr.min.js" type="text/javascript"></script>
+    <script src="https://talkingmethod.thehexaa.com/app-assets/js/scripts/extensions/toastr.js" type="text/javascript"></script>
+    <script src="https://talkingmethod.thehexaa.com/app-assets/js/core/libraries/jquery_ui/jquery-ui.min.js"></script>
+    <script src="https://talkingmethod.thehexaa.com/app-assets/js/scripts/ui/jquery-ui/slider-spinner.js"></script>
+    <script src="https://talkingmethod.thehexaa.com/app-assets/js/scripts/forms/checkbox-radio.js"></script>
+
+    <script>
+        var tot = 0;
+        var tot_coupon = 0;
+        var coupon = 0;
+        var s_m = 0;
+        // var cpn_app = 1;
+        // var max_amnt = 0;
+
+
+            {
+            var cpn_app = 0;
+            // var max_amnt = 0;
+        }
+
+        
+        function subTotal() {
+            $(".tot-price").each(function () {
+                tot = parseFloat(tot) + parseFloat($(this).text())
+            });
+            // console.log("salman ", tot);
+            // console.log("is coupon applied ", cpn_app);
+            $('#sub-total-detail').text(tot.toFixed(2));
+
+            var rowCount = $('.row-items').length;
+            if (rowCount == 0) {
+                $('.myRow').remove();
+                $('.myAlert').css("display", "block");
+            }
+
+            if (cpn_app == 1) {
+                var coupn = $('#coupon-detail').text();
+                coupon = (parseFloat(coupn) / 100);
+                var saved_amount_coupon = coupon * tot;
+
+                // if (saved_amount_coupon > max_amnt)
+                //     tot_coupon = max_amnt;
+                // else
+                tot_coupon = saved_amount_coupon;
+
+                var sm = $('#saved').text();
+                s_m = saved_amount_coupon;
+
+                // cpn_app = 0;
+            }
+
+
+            var multipl = $('#discountt').val();
+            var saved_amount = multipl * tot;
+            var payable_amount = tot - saved_amount - tot_coupon;
+            // var temp_payable_amount = tot - saved_amount;
+            // var off_payable_amount = temp_payable_amount * ((tot_coupon)/100);
+            // var payable_amount = temp_payable_amount - off_payable_amount;
+            $('#payable-detail').text(payable_amount.toFixed(2));
+            $('#saved').text((parseFloat(saved_amount) + parseFloat(s_m)).toFixed(2));
+            $('#my_total').val(payable_amount);
+
+
+            tot = 0;
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".ui-spinner-up").addClass("btn-primary");
+            $(".ui-spinner-down").addClass("btn-warning");
+
+            $(".ui-spinner-up").click(function () {
+                console.log($(this).parent().children("input").val());
+                console.log($(this).parent().children("input").attr('id'));
+
+                let CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+                var id = $(this).parent().children("input").attr('id');
+                var value = $(this).parent().children("input").val();
+                var oldprice = $(this).parent().parent().parent().parent().parent().parent().siblings().find(".prod-price").text();
+
+                if (value != 0) {
+                    swal({
+                        text: "Update quantity?",
+                        icon: "info",
+                        buttons: {
+                            cancel: {
+                                text: "No please, cancel",
+                                value: null,
+                                visible: true,
+                                className: "",
+                                closeModal: false,
+                            },
+                            confirm: {
+                                text: "Yes",
+                                value: true,
+                                visible: true,
+                                className: "",
+                                closeModal: false
+                            }
+                        }
+                    }).then(isConfirm => {
+                        if (isConfirm) {
+
+                            $.ajax({
+                                url: "https://talkingmethod.thehexaa.com/user/credits/update/cart",
+                                type: 'post',
+                                data: {
+                                    id: id,
+                                    value: value,
+                                    _token: CSRF_TOKEN,
+                                },
+                                dataType: 'JSON',
+                                success: function (data) {
+                                    console.log(data);
+                                    if (data.status == 200) {
+                                        swal("Your cart has been updated", {
+                                            icon: "success",
+                                        });
+                                        var newtotal = parseFloat(oldprice) * parseFloat(value);
+                                        $('#r-' + id).text(newtotal);
+                                        subTotal()
+                                    }
+                                    if (data.status == -1) {
+                                        swal("Canceled", "", "error");
+                                    }
+                                },
+                            });
+                        } else {
+                            swal("Canceled", "", "error");
+                            // console.log($(this).parent().children("input").val(value-1))
+                            $('#' + id).val(parseInt(value) - 1)
+                            // console.log(parseInt(value)-1)
+                        }
+                    });
+                }
+            });
+
+            $(".ui-spinner-down").click(function () {
+                // console.log($(this).parent().children("input").val());
+                // console.log($(this).parent().children("input").attr('id'));
+
+                let CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+                var id1 = $(this).parent().children("input").attr('id');
+                var value1 = $(this).parent().children("input").val();
+                var oldprice = $(this).parent().parent().parent().parent().parent().parent().siblings().find(".prod-price").text();
+                // console.log($(this).parent().parent().parent().parent().parent().parent().siblings().find(".tot-price").text())
+                // console.log(value)
+
+                if (value1 != 0) {
+                    swal({
+                        text: "Update quantity?",
+                        icon: "info",
+                        buttons: {
+                            cancel: {
+                                text: "No please, cancel",
+                                value: null,
+                                visible: true,
+                                className: "",
+                                closeModal: false,
+                            },
+                            confirm: {
+                                text: "Yes",
+                                value: true,
+                                visible: true,
+                                className: "",
+                                closeModal: false
+                            }
+                        }
+                    }).then(isConfirm => {
+                        if (isConfirm) {
+
+                            $.ajax({
+                                url: "https://talkingmethod.thehexaa.com/user/credits/update/cart",
+                                type: 'post',
+                                data: {
+                                    id: id1,
+                                    value: value1,
+                                    _token: CSRF_TOKEN,
+                                },
+                                dataType: 'JSON',
+                                success: function (data) {
+                                    console.log(data);
+                                    if (data.status == 200) {
+                                        swal("Your cart has been updated", {
+                                            icon: "success",
+                                        });
+                                        var newtotal = parseFloat(oldprice) * parseFloat(value1);
+                                        $('#r-' + id1).text(newtotal);
+                                        subTotal()
+                                    }
+                                    if (data.status == -1) {
+                                        swal("Canceled", "", "error");
+                                    }
+                                },
+                            });
+                        } else {
+                            swal("Canceled", "", "error");
+                            // console.log($(this).parent().children("input").val())
+                            // $('#'+id1).val(value1+1)
+                            if (value1 != 1) {
+                                $(this).parent().children("input").val(parseInt(value1) + 1)
+                                // console.log(parseInt(value1)+1)
+                            }
+                        }
+                    });
+                }
+            });
+
+
+            subTotal();
+
+
+            $('#coupon_code').keydown(function (e) {
+                // console.log($(this).length);
+                if (e.keyCode == 13) {
+                    e.preventDefault();
+                    if ($(this).length > 0) {
+                        let CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+                        var coupon_code = $('#coupon_code').val();
+                        $.ajax({
+                            url: "https://talkingmethod.thehexaa.com/user/credits/coupon/apply",
+                            type: 'post',
+                            data: {
+                                coupon_code: coupon_code,
+                                _token: CSRF_TOKEN,
+                            },
+                            dataType: 'JSON',
+                            success: function (data) {
+                                console.log(data);
+                                if (data.status == 200) {
+                                    swal("Coupon applied successfully!", {
+                                        icon: "success",
+                                    });
+                                    $('#coupon-detail').text(data.coupons.amount_off);
+                                    // max_amnt = data.coupons.maximum_amount_off;
+                                    cpn_app = 1;
+                                    $('.applycode').prop("disabled", true);
+                                    $('.coupon-code-applied').css("display", "block");
+                                    subTotal();
+                                    location.reload();
+                                } else {
+                                    swal("The coupon expired!", {
+                                        icon: "error",
+                                    });
+                                    $('#coupon_code').val('');
+                                }
+                                if (data.status == -1) {
+                                    swal("Canceled", "", "error");
+                                }
+                            },
+                        });
+                    } else
+                        e.preventDefault();
+                }
+            });
+
+            $('#applyCode').click(function () {
+                // alert('s')
+                let CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+                var coupon_code = $('#coupon_code').val();
+                $.ajax({
+                    url: "https://talkingmethod.thehexaa.com/user/credits/coupon/apply",
+                    type: 'post',
+                    data: {
+                        coupon_code: coupon_code,
+                        _token: CSRF_TOKEN,
+                    },
+                    dataType: 'JSON',
+                    success: function (data) {
+                        // console.log(data);
+                        if (data.status == 200) {
+                            swal("Coupon applied successfully!", {
+                                icon: "success",
+                            });
+                            $('#coupon-detail').text(data.coupons.amount_off);
+                            // max_amnt = data.coupons.maximum_amount_off;
+                            cpn_app = 1;
+                            $('.applycode').prop("disabled", true);
+                            $('.coupon-code-applied').css("display", "block");
+                            subTotal()
+                            location.reload();
+                        } else {
+                            swal("The coupon expired!", {
+                                icon: "error",
+                            });
+                            $('#coupon_code').val('');
+                        }
+                        if (data.status == -1) {
+                            swal("Canceled", "", "error");
+                        }
+                    },
+                });
+            })
+
+            $(document).on("click", ".removeCode", function () {
+                $.ajax({
+                    url: "https://talkingmethod.thehexaa.com/user/cart/removeCoupon",
+                    type: 'get',
+                    dataType: 'JSON',
+                    success: function (data) {
+                        location.reload();
+                    },
+                });
+            })
+
+        })
+    </script>
+ -->
+    
+<link rel='stylesheet' type='text/css' property='stylesheet' href='//talkingmethod.thehexaa.com/_debugbar/assets/stylesheets?v=1567062063'>
+<script type='text/javascript' src='//talkingmethod.thehexaa.com/_debugbar/assets/javascript?v=1567062063'></script><script type="text/javascript">jQuery.noConflict(true);</script>
+
+</body>
+</html>

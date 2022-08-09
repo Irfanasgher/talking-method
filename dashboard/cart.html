@@ -1,0 +1,1118 @@
+
+<!DOCTYPE html>
+<html class="loading" lang="es" xml:lang="es" data-textdirection="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="g9aS2GPOOp8W8eJCooDUVtx4bt3ks966CvKEkcWi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <meta name="author" content="THE HEXAA">
+            
+            <title>User Dashboard</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://talkingmethod.thehexaa.com/front_ui/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://talkingmethod.thehexaa.com/front_ui/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://talkingmethod.thehexaa.com/front_ui/favicon/favicon-16x16.png">
+
+    <link rel="mask-icon" href="https://talkingmethod.thehexaa.com/front_ui/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CQuicksand:300,400,500,700"
+            rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/line-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/vendors.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/charts/jquery-jvectormap-2.0.3.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/weather-icons/climacons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/fonts/meteocons/style.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/charts/morris.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/vendors.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/charts/chartist-plugin-tooltip.css">
+
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/app.css">
+
+    <!-- <link rel="stylesheet" type="text/css"  href="https://talkingmethod.thehexaa.com/app-assets/css/core/menu/menu-types/vertical-compact-menu.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/charts/jquery-jvectormap-2.0.3.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/fonts/simple-line-icons/style.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/pages/timeline.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/pages/dashboard-travel.css">
+
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/editors/summernote.css">
+
+
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/assets/css/style.css">
+
+    <link rel="stylesheet" type="text/css"
+          href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/tables/datatable/datatables.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/timepicker.css">
+
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/forms/selects/select2.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/forms/icheck/icheck.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/forms/icheck/custom.css">
+
+    <link rel="stylesheet" href="https://talkingmethod.thehexaa.com/app-assets/fonts/flag-icon-css/css/flag-icon.min.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.11.0/css/bootstrap-tour-standalone.min.css">
+
+
+    
+          <link rel="stylesheet" href="../css/swiper.css">
+          <link rel="stylesheet" href="../style.css">
+          <link rel="stylesheet" href="../css/styles.css">
+          <link rel="stylesheet" href="../css/frontend.css">
+          <link rel="stylesheet" href="../css/vertical.css">
+          <!-- <link rel="stylesheet" href="../css/bootstrap.css"> -->
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142519844-1"></script>
+        <!-- <script>  window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
+            gtag('js', new Date());
+
+            gtag('config', 'UA-142519844-1');
+        </script>
+
+                    
+            <script>
+                (function (w, d, s, l, i) {
+                    w[l] = w[l] || [];
+                    w[l].push({
+                        'gtm.start':
+                            new Date().getTime(), event: 'gtm.js'
+                    });
+                    var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+                    j.async = true;
+                    j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                    f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayer', 'GTM-W83PVQK');
+            </script>
+         -->
+    
+
+    
+    <style>
+        .badge:hover {
+            cursor: pointer;
+        }
+
+        .fc-more-popover {
+            height: 200px;
+            overflow-y: auto;
+        }
+
+        @media  only screen and (min-width: 1920px) {
+            .profile-image {
+                height: 3.5vh !important;
+            }
+
+            /*.main-menu{*/
+            /*    margin-top: 20px !important;*/
+            /*}*/
+        }
+
+        @media (max-width: 440px){
+            .fc-more-popover {
+                top: 40px !important;
+            }
+        }
+
+        .fc-unthemed .fc-today {
+             color: #6B6F82;
+        }
+    </style>
+</head>
+
+<style>
+    bg--cyan {
+        /* background-color: #192836 !important; */
+        background-color: #fff !important;
+    }
+    .profile-image {
+        object-fit: cover;height: 4.5vh !important;border-radius: 50% !important;margin-top: 4px
+    }
+    @media  screen and (min-width: 1920px) {
+        .profile-image {
+            height: 3.0vh !important;
+        }
+    }
+</style>
+
+<body class="vertical-layout vertical-compact-menu 2-columns   menu-expanded fixed-navbar" data-open="click"
+      data-menu="vertical-compact-menu" data-col="2-columns">
+
+            <!-- staging server Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W83PVQK"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+    
+<style>
+    .badge-up {
+        top: 14px !important;
+        right: 14px !important;
+    }
+
+    .badge {
+        font-size: 65% !important;
+    }
+</style>
+
+<!-- <header class="header header--sticky" style="width: 100%; z-index: 1111;">
+    <div class="header__content header__content--fluid-width" style="width: 98% !important;">
+        <ul class="nav navbar-nav mr-auto float-left " id="menu-button">
+            <li class="nav-item d-none d-md-block">
+                <a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="header__logo-title">
+                            <a href="#intro">
+                    <img src="https://www.talkingmethod.com/front_ui/TalkingMethodlogo.webp" alt=""
+                         style="width: 223px;margin-top: 5px;">
+                </a>
+                    </div>
+        <nav class="header__menu">
+            <ul class="myUlTag">
+                                    <li>
+                        <a href="#pricing" class="header-link">Prices</a>
+                    </li>
+                                                    <li>
+                        <a href="#about" class="header-link">How do I book a class?</a>
+                    </li>
+                                                    <li>
+                        <a href="#testimonials" class="header-link">Student reviews</a>
+                    </li>
+                                                    <li>
+                        <a href="#cta" class="header-link">Contact us</a>
+                    </li>
+                
+                <li>
+
+                                            <a href="javascript:void(0);" data-toggle="dropdown">
+                            <img src="https://www.talkingmethod.com/flags/D9iT7pcDImflag-english.png" class="flag-img" style="margin-top: 28px;
+                                width: 25px;"
+                                 alt="">
+                        </a>
+                                        <ul class="dropdown-menu" style="height: 200px;overflow-y: auto;">
+                                                    <li class="lists" id="en">
+                                <a href="index.html"
+                                   class="dropdown-item list-items language">
+                                    <img src="https://www.talkingmethod.com/flags/D9iT7pcDImflag-english.png" class="flag-img" alt=""
+                                         style="margin-top: 8px;width: 25px;">
+                                    English
+                                </a>
+                            </li>
+                                                    <li class="lists" id="es">
+                                <a href="index-1.html"
+                                   class="dropdown-item list-items language">
+                                    <img src="https://www.talkingmethod.com/flags/s2KgvC7hjwflag-spanish.png" class="flag-img" alt=""
+                                         style="margin-top: 8px;width: 25px;">
+                                    Spanish
+                                </a>
+                            </li>
+                                                    <li class="lists" id="pt">
+                                <a href="index-2.html"
+                                   class="dropdown-item list-items language">
+                                    <img src="https://www.talkingmethod.com/flags/cKvP5xUvDCBR.png" class="flag-img" alt=""
+                                         style="margin-top: 8px;width: 25px;">
+                                    Portuguese
+                                </a>
+                            </li>
+                                            </ul>
+                </li>
+
+                <li class="header__btn header__btn--login">
+                    <a id="userLoginButtonHome" href="login.html" target="_blank">
+                        Login
+                    </a>
+                </li>
+                <li class="header__btn header__btn--signup">
+                    <a id="userRegisterButtonHome" href="https://www.talkingmethod.com/register">
+                        Free trial class!
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header> -->
+
+
+<style>
+.header-navbar .content .header__menu{
+    margin-left: 350px !important;
+}
+@media (max-width: 450px){
+    .header-navbar .content .header__menu{
+        margin-left: 0px !important;        
+        padding-bottom: 3rem !important;
+    }
+    .navbar-container.content{
+        /* padding-bottom: 1rem !important; */
+    }
+}
+</style>
+
+<style>
+    
+#mobile-view-nav #icon {
+  height: 100%;
+  width: 70px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 78px;  
+  border-bottom: 1px solid #6B6F82;
+}
+
+#mobile-view-nav .sidenav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 70px;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 78px;
+  border: 1px solid #6B6F82;
+  border-left: transparent;
+  border-top: transparent;
+}
+
+#mobile-view-nav .menu-bar{
+  position: fixed;
+  left: 22px;
+  top: 22px;
+  color: #6B6F82;
+  z-index: 11;
+}
+
+#mobile-view-nav #icon a.ancher{
+  padding: 8px 8px 8px 20px;
+  text-decoration: none;
+  font-size: 24px;
+   color: #6B6F82;
+  display: block;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+#mobile-view-nav #icon a.active, .sidenav a.active{
+  background-color: #EC1A36;
+  text-decoration: none;
+  font-size: 25px;
+  color: white !important;
+  font-weight: bold;
+  display: block;
+  transition: 0.3s;
+  height: 44px;
+  border: 1px solid #EC1A36;
+}
+
+#mobile-view-nav .sidenav a.ancher {
+  padding: 8px 8px 8px 0px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #6B6F82;
+  display: block;
+  transition: 0.3s;
+  margin-bottom: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#mobile-view-nav .sidenav a:hover ,#icon a:hover{
+  color: #f1f1f1;
+}
+
+#mobile-view-nav .sidenav .closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 50px;
+  /* margin-left: 50px; */
+}
+#mobile-view-nav .sidenav .flag-img-mobile{
+    position: relative;
+}
+#mobile-view-nav .sidenav .flag-img-mobile .dropdown-menu-mobile{
+    position: relative;
+}
+#mobile-view-nav .sidenav li.header__btn--signup > a ,#mobile-view-nav .sidenav li.header__btn--login > a{
+    margin: 0 !important;
+}
+#mobile-view-nav .sidenav #language{
+    height: 120px;
+    transition: all 0.3s ease-in-out ;
+}
+</style>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "calc(100% - 70px)";
+      document.getElementById('menu-bar').style.color = 'white';
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      var color = '#6B6F82';
+      document.getElementById('menu-bar').style.color = color;
+    }
+</script>
+<script>
+    function toggleHeight() {
+      var x = document.getElementById("language");
+      if (x.style.height === "120px") {
+        x.style.height = "0px";
+      } else {
+        x.style.height = "120px";
+      }
+    }
+
+    
+    
+
+    </script>
+
+<nav
+    class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow  bg--cyan navbar-shadow navbar-brand-center" style="position: relative; top: -80px; z-index: 1111;background-color: #fff; height: 75px;">
+    <div class="navbar-wrapper">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item mobile-menu d-md-none mr-auto ">
+                    <a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+                <li class="nav-item d-md-none d-block">
+					<a class="navbar-brand" href="#">
+						<img  alt="talking method logo"
+							src="https://www.talkingmethod.com/front_ui/TalkingMethodlogo.webp"
+						>
+						
+					</a>
+				</li>
+                <li class="nav-item d-md-none" style="visibility: hidden;">
+                    <a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- <div id="mobile-view-nav" class="d-md-none d-block">
+            <div id="icon">
+                <a href="#home" class="active ancher"><i class="fa fa-money"></i></a>
+                <a href="#services" class="ancher"><i class="fa fa-fw fa-wrench"></i></a>
+                <a href="#clients" class="ancher"><i class="fa fa-fw fa-user"></i></a>
+                <a href="#contact" class="ancher"><i class="fa fa-fw fa-envelope"></i></a>
+                <a href="#clients" class="ancher"><i class="fa fa-fw fa-user"></i></a>
+                <a href="#clients" class="ancher"><i class="fa fa-fw fa-user"></i></a>
+              </div>
+            
+              <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#pricing" class="active ancher"> Prices</a>
+                <a href="#about"   class="ancher"></i> How do I book a class?</a>
+                <a href="#testimonials" class="ancher"> Student reviews</a>
+                <a href="#cta" class="ancher"> Contact us</a> 
+                <a href="#cta" class="ancher"> Login </a> 
+                <a href="#cta" class="ancher"> Register</a> 
+
+                <li>
+
+                    <a href="javascript:void(0);" data-toggle="dropdown" onclick="toggleHeight()" id="flag" style="width: 100%">
+                        <img src="https://www.talkingmethod.com/flags/D9iT7pcDImflag-english.png" class="flag-img-mobile" width="25px" alt="">
+                    </a>
+                    <ul class="dropdown-menu-mobile" id="language" style="overflow-y: auto;">
+                        <li class="lists" id="en">
+                            <a 
+                            class="dropdown-item list-items language">
+                                <img src="https://www.talkingmethod.com/flags/D9iT7pcDImflag-english.png" class="flag-img" alt=""
+                                    style="margin-top: 8px;width: 25px;">
+                                English
+                            </a>
+                        </li>
+                        <li class="lists" id="es">
+                            <a
+                            class="dropdown-item list-items language">
+                                <img src="https://www.talkingmethod.com/flags/s2KgvC7hjwflag-spanish.png" class="flag-img" alt=""
+                                    style="margin-top: 8px;width: 25px;">
+                                Spanish
+                            </a>
+                        </li>
+                        <li class="lists" id="pt">
+                            <a
+                            class="dropdown-item list-items language">
+                                <img src="https://www.talkingmethod.com/flags/cKvP5xUvDCBR.png" class="flag-img" alt=""
+                                    style="margin-top: 8px;width: 25px;">
+                                Portuguese
+                            </a>
+                        </li>
+                    </ul>                   
+                </li>
+                
+
+              </div>
+              <div id="menu-div">                  
+                  <span style="font-size:30px;cursor:pointer" class="menu-bar" id="menu-bar"  onclick="openNav()">&#9776;</span>
+              </div>
+        </div> -->
+        <div class="navbar-container content">
+            <div class="collapse navbar-collapse" id="navbar-mobile">
+                <div class="header__logo-title d-md-block d-none" style="position: relative;">
+                    <a href="#intro" style="position: absolute; top: -22px;">
+                        <img src="https://www.talkingmethod.com/front_ui/TalkingMethodlogo.webp" alt=""
+                        style=" width: 223px; margin-top: 0px;">
+                    </a>
+                </div>
+                <nav class="header__menu">
+                    <ul class="myUlTag">
+                        <li>
+                            <a href="#pricing" class="header-link" style="color: #374464;">Prices</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="header-link" style="color: #374464;">How do I book a class?</a>
+                        </li>
+                        <li>
+                            <a href="#testimonials" class="header-link" style="color: #374464;">Student reviews</a>
+                        </li>
+                        <li>
+                            <a href="#cta" class="header-link" style="color: #374464;">Contact us</a>
+                        </li>
+                        
+                        <li>
+
+                            <a href="javascript:void(0);" data-toggle="dropdown">
+                                <img src="https://www.talkingmethod.com/flags/D9iT7pcDImflag-english.png" class="flag-img" style="margin-top: 28px;
+                                    width: 25px;"
+                                    alt="">
+                            </a>
+                            <ul class="dropdown-menu" style="height: 150px;overflow-y: auto;">
+                                <li class="lists" id="en">
+                                    <a href="index.html"
+                                    class="dropdown-item list-items language">
+                                        <img src="https://www.talkingmethod.com/flags/D9iT7pcDImflag-english.png" class="flag-img" alt=""
+                                            style="margin-top: 8px;width: 25px;">
+                                        English
+                                    </a>
+                                </li>
+                                <li class="lists" id="es">
+                                    <a href="index-1.html"
+                                    class="dropdown-item list-items language">
+                                        <img src="https://www.talkingmethod.com/flags/s2KgvC7hjwflag-spanish.png" class="flag-img" alt=""
+                                            style="margin-top: 8px;width: 25px;">
+                                        Spanish
+                                    </a>
+                                </li>
+                                <li class="lists" id="pt">
+                                    <a href="index-2.html"
+                                    class="dropdown-item list-items language">
+                                        <img src="https://www.talkingmethod.com/flags/cKvP5xUvDCBR.png" class="flag-img" alt=""
+                                            style="margin-top: 8px;width: 25px;">
+                                        Portuguese
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="d-md-none d-block">
+
+                            <a href="javascript:void(0);" data-toggle="dropdown">
+                                <img src="https://www.talkingmethod.com/flags/D9iT7pcDImflag-english.png" class="flag-img" style="margin-top: 28px;
+                                    width: 25px;"
+                                    alt="">
+                            </a>
+                            <ul class="dropdown-menu" style="height: 300px;overflow-y: auto;">
+
+                                <li class="nav-item" style="background-color: #3A4563; line-height: 2;" id="step-2">
+                                    <a href="#">
+                                        <i class="fa fa-money" style="color: #ffffff"></i>
+                                        <span class="menu-title" data-i18n="nav.dash.travel"
+                                              style="color: #ffffff; font-size: 16px;">1 Credits</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item " id="step-1" style="line-height: 1;">
+                                    <a href="#">
+                                        <i class="fa fa-home"></i>
+                                        <span class="menu-title" data-i18n="nav.dash.travel" style="font-size: 16px;">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item " id="step-7" style="line-height: 1;">
+                                    <a href="#"><i class="fa fa-archive"></i>
+                                        <span class="menu-title" data-i18n="" style="font-size: 16px;">Bookings</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item " id="step-4" style="line-height: 1;">
+                                    <a href="#">
+                                        <i class="fa fa-calendar"></i>
+                                        <span class="menu-title" data-i18n="nav.dash.travel" style="font-size: 16px;">View classes</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item " id="step-5" style="line-height: 1;">
+                                    <a href="#"><i class="fa fa-euro"></i>
+                                        <span class="menu-title" data-i18n="" style="font-size: 16px;">
+                                            Comprar
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item active-link" id="step-6" style="line-height: 1;">
+                                    <a href="cart.html"><i class="fa fa-shopping-cart"></i>                                       
+                                        <span class="menu-title" data-i18n="">Cart</span>
+                                    </a>
+                                </li>
+
+                                <!-- <li class="lists" id="en">
+                                    <a href="#">
+                                        <i class="fa fa-money" style="color: #374464;"></i>
+                                        <span class="menu-title" data-i18n="nav.dash.travel"
+                                              style="color: #374464; font-size: 16px;">1 Credits</span>
+                                    </a>
+                                </li>
+                                <li class="lists" id="es">
+                                    <a href="#">
+                                        <i class="fa fa-home"></i>
+                                        <span class="menu-title" data-i18n="nav.dash.travel" style="font-size: 16px;">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="lists" id="pt">
+                                    <a href="#"><i class="fa fa-archive"></i>
+                                        <span class="menu-title" data-i18n="" style="font-size: 16px;">Bookings</span>
+                                    </a>
+                                </li>
+
+                                <li class="lists" id="pts">
+                                    <a href="#">
+                                        <i class="fa fa-calendar"></i>
+                                        <span class="menu-title" data-i18n="nav.dash.travel" style="font-size: 16px;">View classes</span>
+                                    </a>
+                                </li>
+
+                                <li class="lists" id="ptss">
+                                    <a href="#"><i class="fa fa-euro"></i>
+                                        <span class="menu-title" data-i18n="" style="font-size: 16px;">
+                                            Comprar
+                                        </span>
+                                    </a>
+                                </li> -->
+
+                                <!-- <li class="lists" id="ptsss">
+                                    <a href="cart.html"><i class="fa fa-shopping-cart"></i>
+                                        
+                                        <span class="menu-title" data-i18n="">Cart</span>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </li>
+
+
+                        <li class="header__btn header__btn--login">
+                            <a id="userLoginButtonHome" href="login.html" target="_blank">
+                                Login
+                            </a>
+                        </li>
+                        <li class="header__btn header__btn--signup">
+                            <a id="userRegisterButtonHome" href="https://www.talkingmethod.com/register">
+                                Free trial class!
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<style>
+li.header__btn--login > a {
+    color: #ec1a36;
+    padding: 3px 22px;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 19px 0 0 25px;
+    border: 1px #ec1a36 solid;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+li.header__btn--login > a:hover {
+    color: #fff;
+    background-color: #ec1a36;
+    transition: all 0.3s ease-in-out;
+}
+
+li.header__btn--signup > a {
+    color: #fff;
+    background-color: #ec1a36;
+    padding: 3px 22px;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 19px 0 0 25px;
+    border: 1px #ec1a36 solid;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+li.header__btn--signup > a:hover {
+    color: #ec1a36;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 320px){
+    li.header__btn--login > a {
+        margin: 10px 0 0 15px;
+    }
+
+    li.header__btn--signup > a {
+        margin: 10px 0 0 15px;
+    }
+
+}
+</style>
+
+<style>
+        .active-link {
+            color: #c3c3c3;
+            background: #f0f0f0;
+            border-right: 4px solid #3A4563;
+        }
+
+        .page-item.active .page-link {
+            z-index: 1;
+            color: #fff;
+            background-color: #EC1A36;
+            border-color: #EC1A36;
+        }
+
+        html body a {
+            color: #374464;
+        }
+
+        .main-menu.menu-light .navigation > li.open > a {
+            color: #545766 !important;
+            background: whitesmoke !important;
+            border-right: 4px solid #3A4563 !important;
+        }
+        #menu-button1{
+            position: absolute; left: 155px; top: 100px; z-index: 1111;
+        }
+
+        #sidebar {
+            margin-left: 100px;
+            /* margin-top: 50px; */
+        }
+
+        @media (max-width: 450px){
+            #menu-button{
+                position: relative; left: 25px; top: 10px; z-index: 1111;
+            }
+            #sidebar {
+                margin-left: 0px;
+                margin-top: -80px;
+            }
+        }
+        @media (max-width: 767.98px) {
+            .header-navbar .navbar-header .menu-toggle {
+                top: 0px;
+                position: relative;
+                font-size: 29px;
+                left: 10px;
+            }
+        }
+
+
+    </style>
+
+<ul class="nav navbar-nav mr-auto float-left " id="menu-button1">
+    <li class="nav-item d-none d-md-block">
+        <a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#">
+            <i class="fa fa-bars"></i>
+        </a>
+    </li>
+</ul>
+<!-- menu-fixed -->
+<div class="main-menu  menu-light menu-accordion menu-shadow" id="sidebar" data-scroll-to-active="true" >
+    <div class="main-menu-content" >
+        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+				<li class="nav-item" style="background-color: #3A4563; line-height: 2;" id="step-2">
+                    <a href="#">
+                        <i class="fa fa-money" style="color: #ffffff"></i>
+                        <span class="menu-title" data-i18n="nav.dash.travel"
+                              style="color: #ffffff; font-size: 16px;">1 Credits</span>
+                    </a>
+                </li>
+                <li class="nav-item " id="step-1" style="line-height: 1;">
+                    <a href="#">
+                        <i class="fa fa-home"></i>
+                        <span class="menu-title" data-i18n="nav.dash.travel" style="font-size: 16px;">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item " id="step-7" style="line-height: 1;">
+                    <a href="#"><i class="fa fa-archive"></i>
+                        <span class="menu-title" data-i18n="" style="font-size: 16px;">Bookings</span>
+                    </a>
+                </li>
+                <li class="nav-item " id="step-4" style="line-height: 1;">
+                    <a href="#">
+                        <i class="fa fa-calendar"></i>
+                        <span class="menu-title" data-i18n="nav.dash.travel" style="font-size: 16px;">View classes</span>
+                    </a>
+                </li>
+                <li class="nav-item " id="step-5" style="line-height: 1;">
+                    <a href="#"><i class="fa fa-euro"></i>
+                        <span class="menu-title" data-i18n="" style="font-size: 16px;">
+							Comprar
+						</span>
+                    </a>
+                </li>
+                <li class="nav-item active-link" id="step-6" style="line-height: 1;">
+                    <a href="cart.html"><i class="fa fa-shopping-cart"></i>
+                        <span class="badge badge-pill badge-default badge-danger badge-default badge-up cart_countt"
+                              style="margin-right: 30px;margin-top: -8px; font-size: 16px;">
+                                                            0
+                                                    </span>
+                        <span class="menu-title" data-i18n="">Cart</span>
+                    </a>
+                </li>
+            </ul>
+    </div>
+</div>
+
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/extensions/toastr.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/plugins/extensions/toastr.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/pages/ecommerce-cart.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/pages/travel.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/vendors/css/ui/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/plugins/ui/jqueryui.css">
+    <link rel="stylesheet" type="text/css" href="https://talkingmethod.thehexaa.com/app-assets/css/plugins/forms/checkboxes-radios.css">
+
+    <style>
+        #content-header {
+            margin: 0 0 5rem;
+            background: url(https://talkingmethod.thehexaa.com/app-assets/images/laptop.jpg) no-repeat scroll 0 40%;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+
+
+        @media  only screen and (min-width: 1000px) {
+            .ui-spinner {
+                width: 50% !important;
+            }
+        }
+
+        @media  only screen and (max-width: 1000px) {
+            .ui-spinner-input {
+                margin: 1px 30px 1px 1px !important;
+            }
+        }
+
+        .weekDays-selector input {
+            display: none !important;
+        }
+
+        .weekDays-selector input[type=checkbox] + label {
+            display: inline-block;
+            border-radius: 8px;
+            background: #dddddd;
+            height: 40px;
+            width: 90px;
+            margin-right: 3px;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .weekDays-selector input[type=checkbox]:checked + label {
+            background: #ED1A36;
+            color: #ffffff;
+        }
+    </style>
+
+    <div class="app-content content" style="margin-top: -40px;">
+        <div class="content-wrapper">
+            <div class="content-header row">
+                <div class="content-header-left col-md-6 col-12 mb-2">
+                    <h3 class="content-header-title mb-0">Cart</h3>
+                    <div class="row breadcrumbs-top">
+                        <div class="breadcrumb-wrapper col-12">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a
+                                            href="#">Home</a></li>
+                                <li class="breadcrumb-item active">Cart</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body">
+                <div class="shopping-cart">
+                    <div class="tab-content pt-1">
+                        <div role="tabpanel" class="tab-pane active show" id="shop-cart-tab" aria-expanded="true"
+                             aria-labelledby="shopping-cart" >
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table
+                                                    class="table table-borderless mb-0 table-responsive-sm table-responsive-xs">
+                                                <thead>
+                                                <div class="alert alert-danger alert-dismissible mb-2 myAlert"
+                                                     role="alert" style="display: none">
+                                                    <h4 class="alert-heading mb-2">Oh no! Cart is empty</h4>
+                                                    <p>View <a
+                                                                href="#"
+                                                                class="alert-link">Credits</a>.
+                                                    </p>
+                                                </div>
+                                                <tr>
+                                                    <th>Package</th>
+                                                    <th>Price</th>
+                                                    <th>Quantity</th>
+                                                    <th>Total</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody class="tableBody">
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row match-height myRow">  </div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function deleteFunction(id) {
+            let CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+            swal({
+                text: "Delete?",
+                icon: "warning",
+                buttons: {
+                    cancel: {
+                        text: "No",
+                        value: null,
+                        visible: true,
+                        className: "",
+                        closeModal: false,
+                    },
+                    confirm: {
+                        text: "Yes",
+                        value: true,
+                        visible: true,
+                        className: "",
+                        closeModal: false
+                    }
+                }
+            }).then(isConfirm => {
+                if (isConfirm) {
+
+                    $.ajax({
+                        url: "https://talkingmethod.thehexaa.com/user/credits/delete/cart",
+                        type: 'post',
+                        data: {
+                            id: id,
+                            _token: CSRF_TOKEN,
+                        },
+                        dataType: 'JSON',
+                        success: function (data) {
+                            // console.log(data);
+                            if (data.status == 200) {
+                                swal("Package deleted from the cart", {
+                                    icon: "success",
+                                });
+                                $("#row-" + id).fadeOut(function () {
+                                    $("#row-" + id).remove();
+                                    subTotal()
+
+                                    // var totalRows = $(".row-index").length;
+                                    // for(var count=0; count<totalRows; count++) document.getElementsByClassName("row-index")[count].textContent = count+1;
+                                });
+                                var old_count = parseInt($('.cart_count').text());
+                                $('.cart_count').text(old_count - 1);
+
+                                var old_count1 = parseInt($('.cart_countt').text());
+                                $('.cart_countt').text(old_count1 - 1);
+                            }
+                            if (data.status == -1) {
+                                swal("Canceled", "", "error");
+                            }
+                        },
+                    });
+                } else {
+                    swal("Canceled", "", "error");
+                }
+            });
+        }
+    </script>
+
+
+<style>
+    .footer__content--fluid-width {
+        /* width: 100%; */
+    }
+
+    #footer-content {
+        /* margin-left: 25px; */
+    }
+
+    .footer{
+        width: 100%;
+    }
+    @media (max-width: 450px){
+        .footer{
+        width: 100%;
+        /* margin-left: 70px; */
+    }
+    }
+
+    @media  screen and (min-width: 1500px) {
+        #footer-content {
+            margin-left: 100px;
+        }
+    }
+</style>
+<footer class="footer" id="footer" style="background: #374464; margin-top: 97px">
+    <div class="footer__content footer__content--fluid-width footer__content--svg" id="footer-content">
+        <div class="grid grid--5col">
+            <div class="grid__item grid__item--x2">
+                                    <a href="#intro">
+                        <img src="https://www.talkingmethod.com/front_ui/tmlogo_white_transparent.png" alt=""
+                             style="width: 223px;margin-top: 5px;margin-bottom: 20px;">
+                    </a>
+                                <p class="grid__text grid__text--copyright" style="color: #fff;">
+                                                                                                        Talking Method is an online English academy. Our classes are private, through Skype, with native teachers. During class time you will be talking to your teacher, learning exactly what you need to accomplish your goals.
+                                                                                        </p>
+            </div>
+            <div class="grid__item">
+                <ul class="grid__list grid__list--fmenu">
+                                            <li><a href="#about" style="color: #fff;">About us</a></li>
+                                        <li><a href="https://www.talkingmethod.com/privacy-policy"
+                           style="color: #fff;">Privacy policy</a></li>
+                    <li><a href="https://www.talkingmethod.com/information"
+                           style="color: #fff;">Information</a></li>
+
+
+                </ul>
+            </div>
+            <div class="grid__item">
+                <ul class="grid__list grid__list--fmenu">
+                                            <li><a href="#pricing" style="color: #fff;">Prices</a></li>
+                                        <li><a href="https://www.talkingmethod.com/faq" style="color: #fff;">Frequently Asked Questions</a></li>
+                                            <li><a href="#cta" style="color: #fff;">Contact us</a></li>
+                                    </ul>
+            </div>
+            <div class="grid__item">
+                <ul class="grid__list grid__list--sicons">
+                                                                                                        <li><a href="https://www.linkedin.com/company/talking-method"><img
+                                            style="filter: invert(1);"
+                                            src="https://www.talkingmethod.com/front_ui/new_theme/images/social/black/linkedin.png"
+                                            alt=""
+                                            title=""/></a></li>
+                                                                        
+                                                                                                        <li><a href="https://www.facebook.com/talkingmethodacademy"><img
+                                            style="filter: invert(1);"
+                                            src="https://www.talkingmethod.com/front_ui/new_theme/images/social/black/facebook.png"
+                                            alt=""
+                                            title=""/></a></li>
+                                                                        
+                                                                                                        <li><a href="https://www.instagram.com/talkingmethod/"><img
+                                            style="filter: invert(1);"
+                                            src="https://www.talkingmethod.com/front_ui/new_theme/images/social/black/instagram.png"
+                                            alt=""
+                                            title=""/></a></li>
+                                                                                        </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="color-white"
+         style="line-height:1.5rem;display:block; padding:30px; text-align:center; background: #374464;">
+        &copy;
+        <script>document.write(new Date().getFullYear());</script> Copyright: TalkingMethod
+        <br/> Powered by The Hexaa.
+    </div>
+</footer>
+
+
+<script src="https://talkingmethod.thehexaa.com/app-assets/vendors/js/vendors.min.js"></script>
+<script src="https://talkingmethod.thehexaa.com/app-assets/vendors/js/charts/chartist.min.js"></script>
+<script src="https://talkingmethod.thehexaa.com/app-assets/vendors/js/charts/chart.min.js"></script>
+<script src="https://talkingmethod.thehexaa.com/app-assets/vendors/js/charts/raphael-min.js"></script>
+<script src="https://talkingmethod.thehexaa.com/app-assets/vendors/js/charts/jquery.sparkline.min.js"></script>
+<script src="https://talkingmethod.thehexaa.com/app-assets/vendors/js/charts/jvector/jquery-jvectormap-2.0.3.min.js"></script>
+<script src="https://talkingmethod.thehexaa.com/app-assets/vendors/js/charts/jvector/jquery-jvectormap-world-mill.js"></script>
+<script src="https://talkingmethod.thehexaa.com/app-assets/data/jvector/visitor-data.js"></script>
+
+<script src="https://talkingmethod.thehexaa.com/app-assets/js/core/app-menu.js"></script>
+<script src="https://talkingmethod.thehexaa.com/app-assets/js/core/app.js"></script>
+
+<script src="https://talkingmethod.thehexaa.com/app-assets/vendors/sweet-alert/sweetalert.js"></script>
+
+<script src="https://talkingmethod.thehexaa.com/app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
+<script src="https://talkingmethod.thehexaa.com/app-assets/js/scripts/tables/datatables/datatable-basic.js"></script>
+
+<script src="https://talkingmethod.thehexaa.com/app-assets/js/timepicker.js"></script>
+
+<script src="https://talkingmethod.thehexaa.com/app-assets/vendors/js/forms/select/select2.full.min.js" type="text/javascript"></script>
+<script src="https://talkingmethod.thehexaa.com/app-assets/js/scripts/forms/select/form-select2.js" type="text/javascript"></script>
+
+<script src="https://talkingmethod.thehexaa.com/app-assets/vendors/js/forms/icheck/icheck.min.js" type="text/javascript"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.js"
+        type="text/javascript"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.11.0/js/bootstrap-tour-standalone.min.js"></script>
+
+
+    
+<link rel='stylesheet' type='text/css' property='stylesheet' href='//talkingmethod.thehexaa.com/_debugbar/assets/stylesheets?v=1567062063'>
+<script type='text/javascript' src='//talkingmethod.thehexaa.com/_debugbar/assets/javascript?v=1567062063'></script><script type="text/javascript">jQuery.noConflict(true);</script>
+
+</body>
+</html>
